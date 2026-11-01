@@ -1,26 +1,36 @@
 {
-  "name": "datos-sinteticos",
-  "version": "1.0.0",
+  "name": "datos-sintéticos",
+  "versión": "1.0.0",
   "description": "Ejercicios Dia 1 - Certificacion 5 QA Cloud-Native: generacion de datos sinteticos, anonimizacion GDPR y versionado para ejecucion paralela",
-  "type": "module",
+  "tipo": "módulo",
   "scripts": {
-    "inspeccionar": "node 1-mockaroo/inspeccionar-mockaroo.js",
-    "generar":      "node 2-faker/generar-usuarios.js",
-    "dump-real":    "node 3-anomizar/1-generar-dump-real.js",
-    "anonimizar":   "node 3-anomizar/2-anonimizar.js",
-    "seed":         "node seed/seed.js seed",
-    "restaurar":    "node seed/seed.js restaurar",
-    "paralelo":     "node seed/seed.js paralelo",
-    "api":          "json-server data/usuarios.json --port 3000",
-    "todo":         "npm run generar && npm run dump-real && npm run anonimizar && npm run seed"
+    "inspeccionar": "nodo 1-mockaroo/inspeccionar-mockaroo.js",
+    "generar": "nodo 2-faker/generar-usuarios.js",
+    "dump-real": "nodo 3-anomizar/1-generar-dump-real.js",
+    "anonimizar": "nodo 3-anomizar/2-anonimizar.js",
+    "seed": "node seed/seed.js seed",
+    "restaurar": "nodo seed/seed.js restaurar",
+    "paralelo": "node seed/seed.js paralelo",
+    "api": "json-server data/usuarios.json --puerto 3000",
+    "todo": "npm run generar && npm run dump-real && npm run anonimizar && npm run seed"
   },
-  "keywords": ["qa", "testing", "faker", "datos-sinteticos", "gdpr", "cloud-native"],
-  "author": "Lite Thinking University of Technology",
-  "license": "MIT",
-  "dependencies": {
+  "palabras clave": [
+    "qa",
+    "pruebas",
+    "faker",
+    "datos-sintéticos",
+    "gdpr",
+    "cloud-native"
+  ],
+  "autor": "Universidad Tecnológica de Pensamiento Ligero",
+  "licencia": "MIT",
+  "dependencias": {
     "@faker-js/faker": "^9.0.0"
   },
   "devDependencies": {
     "json-server": "0.17.4"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.6.0"
   }
 }
